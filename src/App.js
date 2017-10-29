@@ -16,7 +16,7 @@ export default class App extends React.Component {
 
        this.state = {
            background: 'background.jpeg',
-           sound: 'office.wav',
+           sound: 'office.mp3',
            visible: true,
        };
     }
@@ -25,14 +25,14 @@ export default class App extends React.Component {
         if (this.state.visible === false){
             this.setState({
                 background: 'background.jpeg',
-                sound: 'office.wav',
+                sound: 'office.mp3',
                 visible: true
             })
         }
         else {
             this.setState({
                 background: 'outside.jpeg',
-                sound: 'birds.wav',
+                sound: 'birds.mp3',
                 visible: false
             });
         }
@@ -54,7 +54,7 @@ export default class App extends React.Component {
                     loop={true}
                     volume={1.5}
                     source={{
-                        wav: asset(this.state.sound)
+                        mp3: asset(this.state.sound)
                     }}
                 />
                 <VrButton
