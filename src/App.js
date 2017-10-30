@@ -31,7 +31,7 @@ export default class App extends React.Component {
         }
         else {
             this.setState({
-                background: 'outside.jpeg',
+                background: 'horse_shoe.jpg',
                 sound: 'birds.mp3',
                 visible: false
             });
